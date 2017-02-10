@@ -45,10 +45,9 @@
       ++vm.maxMemeId
       savedMeme.id = vm.maxMemeId
       savedMeme.timestamp = new Date()
+      console.log(savedMeme)
       vm.memes.push(savedMeme)
     }
-
-
 
   }
 
@@ -105,9 +104,14 @@
     }
 
     vm.selectImg = function selectImg(imgurl) {
-      console.log(imgurl);
       vm.selectedMeme = imgurl
+    }
 
+    vm.submit = function() {
+      vm.meme.image_url = vm.selectedMeme
+      vm.onSave({
+        savedMeme: vm.meme
+      })
     }
 
   }

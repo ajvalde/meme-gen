@@ -2,6 +2,12 @@
 <div class="row">
   <div class="card-panel">
     <h4 class="center-align">THE DANK MEMES</h4>
+    <div class="center-align img-card card-panel col s6">
+      <div class="thing" ng-repeat="meme in $ctrl.memes">
+        <div class="card-panel blue">
+          <img class="responsive-img" src="{{meme.image_url}}" class="pick_image" alt="">
+        </div>
+      </div>
+    </div>
   </div>
-
 </div>

@@ -14,12 +14,12 @@
 
   <div class="center-align gen-card card-panel col s6">
     <h5>Make meme</h5>
-    <form class="" action="index.html" method="post">
-      <img class="responsive-img" src="{{$ctrl.selectedMeme}}" alt="">
-      <input type="text" name="top_text" value="" placeholder="Top Text">
-      <input type="text" name="bottom_text" value="" placeholder="Bottom Text">
-      <input type="text" name="" value="" placeholder="Created by">
-      <a class="btn" href="#">Save</a>
+    <form class="" name="$ctrl.new_meme_form" ng-submit="$ctrl.submit()">
+      <img id="meme_img" class="responsive-img" src="{{$ctrl.selectedMeme}}" ng-model="$ctrl.meme.image_url" value="{{$ctrl.selectedMeme}}" alt="">
+      <input type="text" ng-model="$ctrl.meme.top_text" id="top_text" name="top_text" value="" placeholder="Top Text" required>
+      <input type="text" ng-model="$ctrl.meme.bottom_text" id="bottom_text" name="bottom_text" value="" placeholder="Bottom Text">
+      <input type="text" ng-model="$ctrl.meme.creator_name" id="creator_name" name="creator_name" value="" placeholder="Created by" required>
+      <button type="submit" class="btn">Accidentally Save</a>
     </form>
   </div>
 </div>
