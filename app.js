@@ -32,11 +32,11 @@
       vm.meme = {}
       vm.memes = [{
         id: 1,
-        image_url: '',
-        top_text: '',
-        bot_text: '',
+        image_url: 'public/images/futurama-fry.jpg',
+        top_text: 'Not sure if meme',
+        bot_text: 'or just dummy data',
         timestamp: new Date(),
-        creator: ''
+        creator: 'Raukus'
       }]
     }
 
