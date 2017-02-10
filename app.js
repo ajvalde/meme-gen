@@ -70,10 +70,10 @@
           image_url: "public/images/scumbag-steve.jpg"
         },
         {
-          image_url: "public/images/scumbag-steve.jpg"
+          image_url: "public/images/the-most-interesting-man-in-the-world.jpg"
         },
         {
-          image_url: "public/images/scumbag-steve.jpg"
+          image_url: "public/images/third-world-skeptical-kid.jpg"
         }
       ]
     }

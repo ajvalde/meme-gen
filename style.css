@@ -1,0 +1,14 @@
+img {
+  width: auto;
+  height: auto;
+}
+.img-card {
+  height: 30em;
+  width: 50em;
+  overflow: scroll;
+}
+.gen-card {
+  height: 30em;
+  width: 50em;
+  overflow: scroll;
+}
