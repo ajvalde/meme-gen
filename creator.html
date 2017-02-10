@@ -6,7 +6,7 @@
     <div class="thing" ng-repeat="image in $ctrl.images">
       <div class="card-panel blue">
         <img class="responsive-img" src="{{image.image_url}}" class="pick_image" alt="">
-          <a class="btn" href="#">Choose image!</a>
+          <button ng-click="$ctrl.selectImg(image.image_url)" class="btn">Choose image!</button>
       </div>
     </div>
   </div>
@@ -15,6 +15,7 @@
   <div class="center-align gen-card card-panel col s6">
     <h5>Make meme</h5>
     <form class="" action="index.html" method="post">
+      <img class="responsive-img" src="{{$ctrl.selectedMeme}}" alt="">
       <input type="text" name="top_text" value="" placeholder="Top Text">
       <input type="text" name="bottom_text" value="" placeholder="Bottom Text">
       <input type="text" name="" value="" placeholder="Created by">

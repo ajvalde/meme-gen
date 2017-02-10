@@ -30,6 +30,7 @@
     vm.$onInit = function $onInit() {
       vm.maxPostId = 3
       vm.meme = {}
+      vm.selectedMeme = ""
       vm.memes = [{
         id: 1,
         image_url: 'public/images/futurama-fry.jpg',
@@ -46,6 +47,8 @@
       savedMeme.timestamp = new Date()
       vm.memes.push(savedMeme)
     }
+
+
 
   }
 
@@ -99,6 +102,12 @@
           image_url: "public/images/third-world-skeptical-kid.jpg"
         }
       ]
+    }
+
+    vm.selectImg = function selectImg(imgurl) {
+      console.log(imgurl);
+      vm.selectedMeme = imgurl
+
     }
 
   }

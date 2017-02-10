@@ -3,12 +3,12 @@ img {
   height: auto;
 }
 .img-card {
-  height: 30em;
+  height: 50em;
   width: 50em;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .gen-card {
-  height: 30em;
+  height: 50em;
   width: 50em;
   overflow: scroll;
 }
